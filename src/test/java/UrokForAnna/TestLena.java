@@ -1,12 +1,28 @@
 package UrokForAnna;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class TestLena extends TestInit2 {
-//    String searchEngine = "https://www.google.com.ua/";
+public class TestLena {
+    WebDriver driver;
+    String searchEngine = "https://www.google.com.ua/";
+
+    @BeforeMethod
+    public void beforeTest() {
+        WebDriverManager.chromedriver().setup();
+        driver = new ChromeDriver();
+    }
+
+    @AfterMethod
+    public void afterMethod() {
+        driver.quit();
+    }
 
 
     @Test
