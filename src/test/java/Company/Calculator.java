@@ -53,7 +53,7 @@ public class Calculator {
 
     @Test
     public void checkKrug() {
-        Assert.assertTrue(plozcaKryga(16)==67);
+        Assert.assertFalse(plozcaKryga(16)==67);
     }
 
     public double plozcaKryga(double radius) {
