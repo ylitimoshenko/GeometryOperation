@@ -36,9 +36,9 @@ public class IfFor {
 
     @Test
     public void test() {
-        ravno(10,11, false , 6.11);
-        ravno(8,3, true , 3.75);
-        ravno(9,12, false , 5.17);
+        ravno(10, 11, false, 6.11);
+        ravno(8, 3, true, 3.75);
+        ravno(9, 12, false, 5.17);
     }
 
     public void ravno(int a, int b, boolean b1, double d) {
@@ -51,21 +51,22 @@ public class IfFor {
 
     @Test
     public void testFor() {
-        for (int i =1; i <= 5; i++){
+        for (int i = 1; i <= 5; i++) {
             System.out.println(i);
         }
     }
+
     @Test
     public void testFor2() {
-        for (int i = 0; i < 10; i+=2) {
+        for (int i = 0; i < 10; i += 2) {
             System.out.println(i);
         }
     }
 
     @Test
     public void testFor3() {
-        for (int i = 0; i < 10; i+=2) {
-            if(i % 2 == 0) {
+        for (int i = 0; i < 10; i += 2) {
+            if (i % 2 == 0) {
                 System.out.println(i);
             }
         }
@@ -73,8 +74,8 @@ public class IfFor {
 
     @Test
     public void testFor4() {
-        for (int i = 0; i < 10; i+=2) {
-            if(5 > i && i == 8) {
+        for (int i = 0; i < 10; i += 2) {
+            if (5 > i && i == 8) {
                 System.out.println(i);
             }
         }
@@ -82,8 +83,8 @@ public class IfFor {
 
     @Test
     public void testFor5() {
-        for (int i = 0; i < 10; i+=2) {
-            if(5 > i || i == 8) {
+        for (int i = 0; i < 10; i += 2) {
+            if (5 > i || i == 8) {
                 System.out.println(i);
             }
         }
@@ -91,8 +92,8 @@ public class IfFor {
 
     @Test
     public void testFor6() {
-        for (int i = 0; i < 10; i+=2) {
-            if( i == 7) {
+        for (int i = 0; i < 10; i += 2) {
+            if (i == 7) {
                 System.out.println(i);
                 break;
             }
@@ -101,11 +102,11 @@ public class IfFor {
 
     @Test
     public void testFor7() {
-        for (int i = 0; i < 10; i+=2) {
-                System.out.println(i);
-                if (i == 6) {
-                    System.out.println("break");
-                    break;
+        for (int i = 0; i < 10; i += 2) {
+            System.out.println(i);
+            if (i == 6) {
+                System.out.println("break");
+                break;
             }
         }
     }
@@ -124,20 +125,20 @@ public class IfFor {
 
     @Test
     public void testFor9() {
-        for(int i = 1; i <=5; i ++)
+        for (int i = 1; i <= 5; i++)
             System.out.println(i);
     }
 
     @Test
     public void testFor10() {
-        for(int i = 5; i >= 1 ; i --)
+        for (int i = 5; i >= 1; i--)
             System.out.println(i);
     }
 
     @Test
     public void testFor11() {
-        for(int i = 1; i <=10 ; i ++)
-            System.out.println("3*"+i+"="+ i * 3);
+        for (int i = 1; i <= 10; i++)
+            System.out.println("3*" + i + "=" + i * 3);
     }
 
 }

@@ -20,8 +20,7 @@ public  class  TestInit {
     public void beforeMethod() {
         WebDriverManager.chromedriver().setup();
         chromeDriver = new ChromeDriver();
-        chromeDriver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-
+//        chromeDriver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
     }
 
         public void sleep (int seconds) {
@@ -34,9 +33,9 @@ public  class  TestInit {
 
 
 
-//    @AfterMethod
-//    public void afterMethod() {
-//        chromeDriver.quit();
-//    }
+    @AfterMethod
+    public void afterMethod() {
+        chromeDriver.quit();
+    }
 
 }

@@ -20,7 +20,8 @@ public class TestExplesite extends TestInit{
     @Test
     public void  getFirstRestInNY() {
         HomePage homePage = new HomePage(chromeDriver);
-        openUrl();
+
+        chromeDriver.get("https://eatstreet.com");
 //        chromeDriver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         homePage.inputCity().sendKeys("New York");
         homePage.getFedBtn().click();

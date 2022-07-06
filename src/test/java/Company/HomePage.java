@@ -38,6 +38,6 @@ public class HomePage  extends  BasePage{
 
 
     public WebElement getTitle() {
-        return explicitWait("//h1[contains(text(),'New York City Restaurants That Deliver & Takeout')]");
+        return explicitWait("//h1[contains(text(),'New York City Restaurants')]");
     }
 }
