@@ -18,5 +18,6 @@ public class TaskSelenium {
         chromeDriver.findElement(By.xpath("//input")).clear();
         String url = chromeDriver.getCurrentUrl();
         Assert.assertEquals(url, "https://rozetka.com.ua/");
+        chromeDriver.quit();
     }
 }
